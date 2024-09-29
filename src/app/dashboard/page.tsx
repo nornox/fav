@@ -146,7 +146,7 @@ export default function DashboardPage() {
       })
       router.push('/login')
     } catch (error) {
-      console.error('登出失败:', error)
+      console.error('登出失败:', error) 
       toast({
         title: '登出失败',
         description: '请稍后再试',
