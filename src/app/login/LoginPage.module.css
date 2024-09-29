@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.loginCard {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #0ff;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.title {
+  color: #0ff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.input {
+  margin-bottom: 1rem;
+}
+
+.input input {
+  color: #fff;
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+.button {
+  width: 100%;
+  margin-top: 1rem;
+  background: linear-gradient(45deg, #0ff, #f0f);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(45deg, #000 25%, transparent 25%),
+    linear-gradient(-45deg, #000 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #000 75%),
+    linear-gradient(-45deg, transparent 75%, #000 75%);
+  background-size: 20px 20px;
+  background-color: #111;
+  animation: backgroundAnimation 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0 0, 10px 0, 10px -10px, 0px 10px;
+  }
+  100% {
+    background-position: 20px 20px, 30px 20px, 30px 10px, 20px 30px;
+  }
+}
